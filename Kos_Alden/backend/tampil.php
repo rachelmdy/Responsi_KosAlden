@@ -1,7 +1,7 @@
 <?php 
 require 'koneksi.php';
 $data = [];
-$query = mysqli_query($con,"select * from diary");
+$query = mysqli_query($con,"select * from penghuni");
 while ($row = mysqli_fetch_object($query)) {
 	$data[] = $row;
 }

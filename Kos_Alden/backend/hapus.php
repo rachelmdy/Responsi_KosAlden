@@ -3,8 +3,8 @@ require 'koneksi.php';
 $input = file_get_contents('php://input');
 $pesan =[];
 
-$no = $_GET['no'];
-$query = mysqli_query($con,"delete from diary where no='$no'");
+$id = $_GET['id'];
+$query = mysqli_query($con,"delete from penghuni where id='$id'");
 if ($query) {
 	http_response_code(201);
 	$pesan['status'] = 'sukses';

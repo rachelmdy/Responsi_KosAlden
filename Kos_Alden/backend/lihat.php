@@ -1,8 +1,8 @@
 <?php 
 require 'koneksi.php';
 $data = [];
-$no = $_GET['no'];
-$query = mysqli_query($con,"select * from diary where no ='$no'");
+$id = $_GET['id'];
+$query = mysqli_query($con,"select * from penghuni where id ='$id'");
 $jumlah = mysqli_num_rows($query);
 if ($jumlah == 1) {
 	$row = mysqli_fetch_object($query);
